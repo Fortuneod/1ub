@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "assets": [
+      {
+        "include": "i18n/**/*",
+        "watchAssets": true
+      },
+      {
+        "include": "database/global-bundle.pem",
+        "watchAssets": true
+      },
+      {
+        "include": "config/push-notification-key.json",
+        "outDir": "dist"
+      },
+      {
+        "include": "public/mails/**",
+        "outDir": "dist"
+      }
+    ]
+  }
+}
